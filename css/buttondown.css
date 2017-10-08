@@ -1,0 +1,238 @@
+
+
+.button-container.right {
+    left: calc(50% - 0px);
+}
+.button-container.right [class^="fa"]:before,
+.button-container.right [class*=" fa-"]:before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    color: #C2185B;
+}
+
+.button-container {
+    top: 85%;
+    transform: translateY(-50%);
+    position: absolute;
+    width: 100px;
+    /*MAKE SURE THIS IS TWICE THE SIZE OF THE HEIGHT*/
+    height: 150px;
+    font-size: 20px;
+
+}
+
+.button.round {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    position: relative;
+    width: 4em;
+    height: 4em;
+    -moz-border-radius: 4em;
+    -webkit-border-radius: 4em;
+    border-radius: 4em;
+    -moz-transition-property: color, border, -moz-transform;
+    -o-transition-property: color, border, -o-transform;
+    -webkit-transition-property: color, border, -webkit-transform;
+    transition-property: color, border, transform;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #999;
+    line-height: 1.5em;
+    cursor: pointer;
+    border-color: rgba(153, 153, 153, 0.8);
+}
+.button.round.loading span:not(.loading-text), .button.round.loading i {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+.button.round.loading:after {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transform: translate(-50%, -50%) rotate(45deg);
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+    border: none;
+}
+.button.round.loading:hover:before {
+    -moz-transform: translate(-50%, -20%) rotate(45deg);
+    -ms-transform: translate(-50%, -20%) rotate(45deg);
+    -webkit-transform: translate(-50%, -20%) rotate(45deg);
+    transform: translate(-50%, -20%) rotate(45deg);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+    opacity: 0.1;
+}
+.button.round.loading:before {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    -moz-transform: translate(-50%, -40%) rotate(45deg);
+    -ms-transform: translate(-50%, -40%) rotate(45deg);
+    -webkit-transform: translate(-50%, -40%) rotate(45deg);
+    transform: translate(-50%, -40%) rotate(45deg);
+    width: 100%;
+    height: 100%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
+    opacity: 0.1;
+}
+.button.round:before {
+    content: " ";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-border-radius: 4em;
+    -webkit-border-radius: 4em;
+    border-radius: 4em;
+    -moz-transition-property: width, height, opacity, border-radius, -moz-transform;
+    -o-transition-property: width, height, opacity, border-radius, -o-transform;
+    -webkit-transition-property: width, height, opacity, border-radius, -webkit-transform;
+    transition-property: width, height, opacity, border-radius, transform;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    position: absolute;
+    background: #fff;
+}
+.button.round:after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -moz-border-radius: 30em;
+    -webkit-border-radius: 30em;
+    border-radius: 30em;
+    -moz-transition-property: width, height, opacity, border-radius, -moz-transform;
+    -o-transition-property: width, height, opacity, border-radius, -o-transform;
+    -webkit-transition-property: width, height, opacity, border-radius, -webkit-transform;
+    transition-property: width, height, opacity, border-radius, transform;
+    -moz-transition-delay: 0.17s;
+    -o-transition-delay: 0.17s;
+    -webkit-transition-delay: 0.17s;
+    transition-delay: 0.17s;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border: solid 1px #fff;
+    position: absolute;
+}
+.button.round:hover:before {
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+}
+.button.round.button--hold:before {
+    width: 95%;
+    height: 95%;
+    -moz-transition-duration: 0.1s;
+    -o-transition-duration: 0.1s;
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -moz-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    -o-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    transition-timing-function: cubic-bezier(0, 0, 0, 1);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+    opacity: 0.9;
+}
+.button.round:hover:after {
+    width: 180%;
+    height: 180%;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+    opacity: 0;
+}
+.button.round.button--click:after {
+    -moz-animation: pulsate 0.4s ease-out 1;
+    -webkit-animation: pulsate 0.4s ease-out 1;
+    animation: pulsate 0.4s ease-out 1;
+}
+.button.round span {
+    font-family: "Source Sans Pro", "Helvetica";
+    font-style: normal;
+    font-weight: 100;
+    text-transform: uppercase;
+    position: absolute;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -2em;
+    -moz-transition-property: opacity;
+    -o-transition-property: opacity;
+    -webkit-transition-property: opacity;
+    transition-property: opacity;
+    -moz-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
